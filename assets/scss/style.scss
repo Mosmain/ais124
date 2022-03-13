@@ -1,0 +1,118 @@
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+@import 'bootstrap/utilities';
+
+$font-primary: 'Roboto', sans-serif;
+$primary: #fec771;
+
+body {
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: normal;
+  background: #fafafa;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+
+  .navbar {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+
+    a {
+      color: white;
+      transition: all 0.3s linear;
+
+      &:hover {
+        color: #d2d2d2;
+      }
+    }
+    i {
+      font-size: 20pt;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+
+.modal-content {
+  font-family: $font-primary;
+  background-color: #000000;
+  color: white;
+
+  .modal-header {
+    border-bottom: none;
+
+    button {
+      font-size: 20pt;
+    }
+  }
+
+  .modal-body {
+
+  }
+}
+
+.list-group-item {
+  font-family: $font-primary;
+  background: none;
+  font-size: 24pt;
+  height: 15%;
+  color: white;
+
+  &:hover {
+    box-shadow: 1px 1px #2b2b2b,
+    2px 2px #2b2b2b,
+    3px 3px #2b2b2b,
+    4px 4px #2b2b2b,
+    5px 5px #2b2b2b,
+    6px 6px #2b2b2b,
+    7px 7px #2b2b2b;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+    background-color: white;
+    color: black;
+  }
+}
+
+.list-group-flush > .list-group-item {
+  border-width: 0 0 0;
+  transition: all 0.3s linear;
+}
+
+.list-group {
+  height: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+
+  a {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+
+    p {
+      align-self: center;
+      margin: 0;
+    }
+  }
+}
+
+.carousel-item {
+  filter: brightness(40%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-slide-0 {
+  background-image: url("https://cdn.shopify.com/s/files/1/0588/6745/products/gen2_1480x800.jpg?v=1532863223");
+}
+
+.bg-slide-1 {
+  background-image: url("https://elstroy-company.ru/images/ehlektromontazh-v-gorodakh-moskovskoj-oblasti/ela16.jpg");
+}
