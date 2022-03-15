@@ -8352,9 +8352,24 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
+.svg-icon {
+  width: 2em;
+  height: 2em; }
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: white; }
+
+.svg-icon circle {
+  stroke: white;
+  stroke-width: 1; }
+
+.font-light {
+  font: 16px "Light", "Rubik", sans-serif; }
+
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font: 16px "Rubik", sans-serif;
   line-height: 1.8;
   font-weight: normal;
   background: #fafafa; }
@@ -8363,9 +8378,24 @@ header {
   position: fixed;
   z-index: 2; }
   header .navbar {
-    background-color: black;
+    background: none;
     width: 100%;
     position: fixed; }
+    header .navbar button {
+      color: #fff;
+      padding: 0; }
+      header .navbar button h5, header .navbar button .h5 {
+        font-weight: 300; }
+      header .navbar button:hover {
+        color: #d2d2d2; }
+      header .navbar button:hover .svg-icon path {
+        fill: #d2d2d2; }
+      header .navbar button:active {
+        stroke: none;
+        box-shadow: none; }
+      header .navbar button:focus {
+        stroke: none;
+        box-shadow: none; }
     header .navbar a {
       color: white;
       transition: all 0.3s linear; }
@@ -8376,16 +8406,25 @@ header {
       vertical-align: middle; }
 
 .modal-content {
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: #000000;
   color: white; }
   .modal-content .modal-header {
     border-bottom: none; }
+    .modal-content .modal-header .close-modal {
+      cursor: pointer; }
+      .modal-content .modal-header .close-modal:hover h5, .modal-content .modal-header .close-modal:hover .h5 {
+        color: #d2d2d2; }
+      .modal-content .modal-header .close-modal:hover button {
+        color: #d2d2d2; }
     .modal-content .modal-header button {
-      font-size: 20pt; }
+      font-size: 20pt;
+      color: #fff; }
+      .modal-content .modal-header button:focus {
+        box-shadow: none; }
 
 .list-group-item {
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
   background: none;
   font-size: 24pt;
   height: 15%;
@@ -8413,16 +8452,57 @@ header {
       align-self: center;
       margin: 0; }
 
-.carousel-item {
-  filter: brightness(40%);
-  background-repeat: no-repeat;
+.carousel-item .sub-info-text {
+  position: relative;
+  color: white;
+  flex-direction: column; }
+  .carousel-item .sub-info-text h1, .carousel-item .sub-info-text .h1 {
+    font-family: "light", "Rubik", sans-serif;
+    width: 70%;
+    text-align: center;
+    word-wrap: break-word; }
+  .carousel-item .sub-info-text a {
+    width: calc(8rem + 2vw);
+    text-align: center; }
+    .carousel-item .sub-info-text a:focus {
+      box-shadow: none; }
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   background-size: cover;
-  background-position: center center; }
+  background-repeat: no-repeat;
+  filter: brightness(40%); }
 
 .bg-slide-0 {
-  background-image: url("https://cdn.shopify.com/s/files/1/0588/6745/products/gen2_1480x800.jpg?v=1532863223"); }
+  background-image: url("../img/bg0.jpg");
+  background-position: center; }
 
 .bg-slide-1 {
-  background-image: url("https://elstroy-company.ru/images/ehlektromontazh-v-gorodakh-moskovskoj-oblasti/ela16.jpg"); }
+  background-image: url("../img/bg1.jpg");
+  background-position: center; }
+
+.bg-slide-2 {
+  background-image: url("../img/bg2.jpg");
+  background-position: center; }
+
+.bg-slide-3 {
+  background-image: url("../img/bg3.jpg"); }
+
+.bg-slide-4 {
+  background-image: url("../img/bg4.jpg"); }
+
+.bg-slide-5 {
+  background-image: url("../img/bg5.jpg");
+  background-position: center; }
+
+.bg-slide-6 {
+  background-image: url("../img/bg6.jpg");
+  background-position: center; }
+
+@media (max-width: 575.98px) {
+  .carousel-item .sub-info-text h1, .carousel-item .sub-info-text .h1 {
+    font-size: 1.25em; } }
 
 /*# sourceMappingURL=style.css.map */
