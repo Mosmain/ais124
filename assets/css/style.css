@@ -8365,9 +8365,6 @@ textarea.form-control-lg {
   stroke: white;
   stroke-width: 1; }
 
-.font-light {
-  font: 16px "Light", "Rubik", sans-serif; }
-
 body {
   font: 16px "Rubik", sans-serif;
   line-height: 1.8;
@@ -8473,6 +8470,7 @@ header {
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   filter: brightness(40%); }
 
 .bg-slide-0 {
