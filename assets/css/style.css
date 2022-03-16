@@ -8369,7 +8369,23 @@ body {
   font: 16px "Rubik", sans-serif;
   line-height: 1.8;
   font-weight: normal;
-  background: #fafafa; }
+  background: #110f16; }
+
+.dark {
+  background: #110f16; }
+
+.light {
+  background: #f3f5f7; }
+
+a, a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; }
+
+#pageHeaderTitle {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem; }
 
 header {
   position: fixed;
@@ -8377,7 +8393,8 @@ header {
   header .navbar {
     background: none;
     width: 100%;
-    position: fixed; }
+    position: fixed;
+    transition: all 0.3s; }
     header .navbar button {
       color: #fff;
       padding: 0; }
@@ -8498,6 +8515,16 @@ header {
 .bg-slide-6 {
   background-image: url("../img/bg6.jpg");
   background-position: center; }
+
+.card .wrapper {
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+  z-index: 0; }
+  .card .wrapper img {
+    transition: all 0.3s; }
+.card:hover img {
+  transform: scale(1.1); }
 
 @media (max-width: 575.98px) {
   .carousel-item .sub-info-text h1, .carousel-item .sub-info-text .h1 {
