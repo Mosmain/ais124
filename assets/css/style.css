@@ -8554,6 +8554,11 @@ header {
 .why-us h3, .why-us .h3 {
   font-size: 1.5em; }
 
+.sub-info-text {
+  position: relative;
+  color: white;
+  flex-direction: column; }
+
 @media (max-width: 575.98px) {
   .carousel-item .sub-info-text h1, .carousel-item .sub-info-text .h1, .welcome p, .work-together p {
     font-size: 1.25em; } }

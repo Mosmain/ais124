@@ -651,6 +651,12 @@ header {
   }
 }
 
+.sub-info-text {
+  position: relative;
+  color: white;
+  flex-direction: column;
+}
+
 //____________media breakpoint____________
 @include media-breakpoint-down(sm) {
   .carousel-item .sub-info-text h1, .welcome p, .work-together p {
