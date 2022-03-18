@@ -6,6 +6,10 @@
 $font-primary: 'Rubik', sans-serif;
 $primary: #fec771;
 
+.text-justify {
+  text-align: justify;
+}
+
 //____________custom svg from http://svgicons.sparkk.fr/____________
 .svg-icon {
   width: 2em;
@@ -16,6 +20,7 @@ $primary: #fec771;
 .svg-icon polygon,
 .svg-icon rect {
   fill: white;
+  transition: all 0.3s;
 }
 
 .svg-icon circle {
@@ -458,9 +463,19 @@ header {
     .close-modal {
       cursor: pointer;
 
+      &:hover .svg-icon path {
+        fill: #d2d2d2;
+      }
+
+      h5 {
+        font-weight: 300;
+        transition: all 0.3s;
+      }
+
       &:hover h5 {
         color: #d2d2d2;
       }
+
       &:hover button {
         color: #d2d2d2;
       }
@@ -476,6 +491,10 @@ header {
     }
   }
   .modal-body {}
+  .modal-footer {
+    border-top: none;
+
+  }
 }
 
 .list-group-item {
@@ -590,6 +609,7 @@ header {
   background-position: center;
 }
 
+//____________cards____________
 .card {
   .wrapper {
     overflow: hidden;
@@ -608,11 +628,32 @@ header {
   }
 }
 
+.work-together {
+  background-image: url("/assets/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 
+  p {
+    font-size: 2em;
+    font-weight: 300;
+  }
+
+  .bg-banner {
+
+  }
+}
+
+.why-us {
+  h3 {
+    font-size: 1.5em;
+  }
+}
 
 //____________media breakpoint____________
 @include media-breakpoint-down(sm) {
-  .carousel-item .sub-info-text h1 {
+  .carousel-item .sub-info-text h1, .welcome p, .work-together p {
     font-size: 1.25em;
   }
 }

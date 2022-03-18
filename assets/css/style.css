@@ -8352,6 +8352,9 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
+.text-justify {
+  text-align: justify; }
+
 .svg-icon {
   width: 2em;
   height: 2em; }
@@ -8359,7 +8362,8 @@ textarea.form-control-lg {
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: white; }
+  fill: white;
+  transition: all 0.3s; }
 
 .svg-icon circle {
   stroke: white;
@@ -8431,6 +8435,11 @@ header {
     border-bottom: none; }
     .modal-content .modal-header .close-modal {
       cursor: pointer; }
+      .modal-content .modal-header .close-modal:hover .svg-icon path {
+        fill: #d2d2d2; }
+      .modal-content .modal-header .close-modal h5, .modal-content .modal-header .close-modal .h5 {
+        font-weight: 300;
+        transition: all 0.3s; }
       .modal-content .modal-header .close-modal:hover h5, .modal-content .modal-header .close-modal:hover .h5 {
         color: #d2d2d2; }
       .modal-content .modal-header .close-modal:hover button {
@@ -8440,6 +8449,8 @@ header {
       color: #fff; }
       .modal-content .modal-header button:focus {
         box-shadow: none; }
+  .modal-content .modal-footer {
+    border-top: none; }
 
 .list-group-item {
   font-family: "Rubik", sans-serif;
@@ -8530,8 +8541,21 @@ header {
 .card:hover img {
   transform: scale(1.1); }
 
+.work-together {
+  background-image: url("/assets/img/banner.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+  .work-together p {
+    font-size: 2em;
+    font-weight: 300; }
+
+.why-us h3, .why-us .h3 {
+  font-size: 1.5em; }
+
 @media (max-width: 575.98px) {
-  .carousel-item .sub-info-text h1, .carousel-item .sub-info-text .h1 {
+  .carousel-item .sub-info-text h1, .carousel-item .sub-info-text .h1, .welcome p, .work-together p {
     font-size: 1.25em; } }
 
 /*# sourceMappingURL=style.css.map */
