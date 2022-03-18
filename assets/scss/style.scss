@@ -29,10 +29,17 @@ body {
   font-weight: normal;
   background: #110f16;
 }
+
+.welcome {
+  p {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+}
+
 .dark {
   background: #110f16;
 }
-
 
 .light {
   background: #f3f5f7;
