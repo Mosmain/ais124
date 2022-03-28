@@ -12,7 +12,7 @@
     <!--need to replace-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
 </head>
 <body>
@@ -39,91 +39,114 @@
 
 <!--slider-->
 <section class="container-fluid px-0">
-    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel"
-         data-bs-interval="3000" data-bs-pause="touchend">
-        <div class="carousel-inner bg-info" role="listbox">
-            <!--slide 0-->
-            <div class="carousel-item active">
-                <div class="bg bg-slide-0"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ПРОЕКТИРОВАНИЕ</h1>
-                    <a href="/projects/1.html" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <!--slide 1-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-1"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ДИЗАЙН</h1>
-                    <a href="/projects/2.html" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <!--slide 2-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-2"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ПЛАНИРОВАНИЕ ТЕРРИТОРИЙ</h1>
-                    <a href="/projects/3.html" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <!--slide 3-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-3"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ОХРАННО-ПОЖАРНАЯ СИГНАЛИЗАЦИЯ</h1>
-                    <a href="/projects/4.html" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <!--slide 4-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-4"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ВИДЕОНАБЛЮДЕНИЕ</h1>
-                    <a href="/projects/5.html" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <!--slide 5-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-5"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ЭЛЕКТРОМОНТАЖ</h1>
-                    <a href="/projects/6.html" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
-            </div>
-            <!--slide 6-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-6"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ОТДЕЛОЧНЫЕ РАБОТЫ</h1>
-                    <a href="/projects/7.html" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
+    <div class="carousel-inner bg-info">
+        <div class="d-block">
+            <div class="bg bg-slide-3"></div>
+            <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
+                <h1 class="display-6">ОХРАННО-ПОЖАРНАЯ СИГНАЛИЗАЦИЯ</h1>
+                <p class="">давайте изучим подробнее</p>
+                <a href="#welcome" type="button" class="btn btn-outline-light down-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                         class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                </a>
             </div>
         </div>
-        <!--arrows-->
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-bs-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 </section>
 
-<section class="welcome container mb-5 mt-5">
-    <h3 class="text-center text-white mb-5">ДОБРО ПОЖАЛОВАТЬ</h3>
-    <p class="text-white text-center m-0">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Ab accusantium corporis deserunt dignissimos excepturi
-        impedit in, iure, modi nihil omnis quod, soluta voluptates. Autem dicta, eligendi incidunt ipsa labore
-        molestias.
+<section class="welcome container mb-5 mt-5 stage" id="welcome">
+    <h3 class="text-center text-white mb-5">ОХРАННО-ПОЖАРНАЯ СИГНАЛИЗАЦИЯ (ОПС)</h3>
+    <p class="text-white text-justify m-0">
+        Наша компания предлагает оборудование ОПС с типовыми характеристиками для установки на коммерческих,
+        производственных, общественных объектах. У нас есть отдельные комплектующие и полноценные комплексы,
+        оптимизированные под конкретные задачи.
     </p>
+
+    <h3 class="text-center text-white mb-5 mt-5">Оборудование ОПС</h3>
+    <p class="text-white text-justify m-0">
+        Охранно-пожарная сигнализация ориентирована на выявление несанкционированного проникновения, возгорания,
+        изменения других контролируемых извещателями характеристик на обслуживаемой территории. Эта система
+        интегрируется в уже имеющиеся комплексы или формирует новую сеть.
+        <br>
+        Она состоит из трех элементов:
+    </p>
+    <ol class="list-counter-circle">
+        <li>
+            сенсорное оборудование;
+        </li>
+        <li>
+            устройства централизованного управления;
+        </li>
+        <li>
+            устройства сбора, анализа данных;
+        </li>
+        <li>
+            ПМТ — проект межевания территории.
+        </li>
+    </ol>
+
+    <h3 class="text-center text-white mb-5 mt-5">Извещатели и датчики</h3>
+    <p class="text-white text-justify m-0">
+        Сенсорные устройства могут быть пассивными или активными. В первом случае реакция возникает при изменении
+        действующей среды. Во втором приборы генерируют сигналы, реагируя на их изменения.
+        Извещатели делят на три группы:
+    </p>
+    <ol class="list-counter-circle">
+        <li>
+            <h5 class="pt-2">
+                Неадресные
+            </h5>
+            Их включают в основную шину, ведущую к контрольным устройствам. Они запускают общую тревогу.
+            Оптимально подходят для небольших объектов с малым количеством помещений.
+        </li>
+        <li>
+            <h5 class="pt-2">
+                Адресные
+            </h5>
+            Передают в шину информацию о нарушении среды и собственный идентификатор (адрес). Это позволяет
+            выявить место проникновения, возгорания. Оптимально подходят средним и крупным объектам без специальных
+            требований.
+        </li>
+        <li>
+            <h5 class="pt-2">
+                Адресно-аналоговые
+            </h5>
+            Интеллектуальные устройства, способные передавать со своим идентификатором степень изменения контролируемых
+            параметров. Это позволяет дополнительно отслеживать потребность в техническом обслуживании оборудования в
+            зоне контроля, решать другие задачи. Адресно-аналоговые извещатели подходят для средних и крупных объектов с
+            большим количеством оборудования, нуждающегося в дополнительном наблюдении.
+        </li>
+    </ol>
 </section>
 
-<section class="container" id="works">
-    <h3 class="text-center text-white">ВИДЫ РАБОТ</h3>
+<section class="work-together mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center text-white mt-5 mb-4">
+                Заинтересовали?
+            </h1>
+            <p class="text-center text-white">
+                Вы можете связаться с нами для получения более подробной информации и расчета цен
+            </p>
+            <div class="text-wa text-center mb-4">
+                <a href="https://wa.me/88005553535" target="_blank" type="button" class="btn btn-outline-light btn-lg">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    WhatsApp
+                </a>
+                <a href="tel:+79176055534" type="button" class="btn btn-outline-light btn-lg">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    +7(917)-605-55-34
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="container want-more mb-5">
+    <h3 class="text-center text-white">Вы можете изучить наш полный спектр услуг</h3>
     <div class="row justify-content-center">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-4 justify-content-center">
             <div class="col">
@@ -186,25 +209,6 @@
             <div class="col">
                 <div class="card bg-dark text-white h-100">
                     <div class="wrapper">
-                        <img src="/assets/img/card3.jpg" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Охранно-пожарная сигнализация</h5>
-                        <p class="card-text text-justify">
-                            Наша компания предлагает оборудование ОПС с типовыми характеристиками для установки на
-                            коммерческих, производственных, общественных объектах.
-                        </p>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center">
-                        <a href="/projects/4.html" type="button" class="btn btn-outline-light btn-lg btn-block">
-                            Подробнее
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card bg-dark text-white h-100">
-                    <div class="wrapper">
                         <img src="/assets/img/card4.jpg" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
@@ -235,7 +239,7 @@
                         </p>
                     </div>
                     <div class="card-footer d-flex justify-content-center">
-                        <a href="/projects/7.html" type="button" class="btn btn-outline-light btn-lg btn-block">
+                        <a href="/projects/6.html" type="button" class="btn btn-outline-light btn-lg btn-block">
                             Подробнее
                         </a>
                     </div>
@@ -253,93 +257,12 @@
                         </p>
                     </div>
                     <div class="card-footer d-flex justify-content-center">
-                        <a href="/projects/8.html" type="button" class="btn btn-outline-light btn-lg btn-block">
+                        <a href="/projects/7.html" type="button" class="btn btn-outline-light btn-lg btn-block">
                             Подробнее
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="work-together mt-5 mb-5" id="contacts">
-    <div class="container">
-        <div class="row">
-            <h1 class="text-center text-white mt-5 mb-4">
-                Давайте работать вместе
-            </h1>
-            <p class="text-center text-white">
-                Вы можете связаться с нами для получения более подробной информации и рассчета цен
-            </p>
-            <div class="text-wa text-center mb-4">
-                <a href="https://wa.me/88005553535" target="_blank" type="button" class="btn btn-outline-light btn-lg">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    WhatsApp
-                </a>
-                <a href="tel:+79176055534" type="button" class="btn btn-outline-light btn-lg">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    +7(917)-605-55-34
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="why-us container mb-5">
-    <h3 class="text-center text-white mb-5">ПОЧЕМУ МЫ?</h3>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4 justify-content-center">
-        <div class="col">
-            <div class="card h-100 bg-dark">
-                <div class="card h-100 p-3 shadow bg-dark text-center text-white border-0">
-                    <div class="card-body d-flex flex-column justify-content-around">
-                        <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-                        <hr/>
-                        <p class="card-title lead">Мы — профессионалы</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 bg-dark">
-                <div class="card h-100 p-3 shadow bg-dark text-center text-white border-0">
-                    <div class="card-body d-flex flex-column justify-content-around">
-                        <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
-                        <hr/>
-                        <p class="card-title lead">Сроки — это важно</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 bg-dark">
-                <div class="card h-100 p-3 shadow bg-dark text-center text-white border-0">
-                    <div class="card-body d-flex flex-column justify-content-around">
-                        <i class="fa fa-handshake-o fa-2x" aria-hidden="true"></i>
-                        <hr/>
-                        <p class="card-title lead">Индивидуальный подход</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100 bg-dark">
-                <div class="card h-100 p-3 shadow bg-dark text-center text-white border-0">
-                    <div class="card-body d-flex flex-column justify-content-around">
-                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                        <hr/>
-                        <p class="card-title lead">Любовь к своему делу</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="card-group">
-
         </div>
     </div>
 </section>

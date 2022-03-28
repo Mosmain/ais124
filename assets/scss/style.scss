@@ -153,7 +153,15 @@ header {
       }
     }
   }
-  .modal-body {}
+  .modal-body {
+    p {
+      width: 100%;
+    }
+
+    .dropdown-toggle {
+      flex-flow: wrap;
+    }
+  }
   .modal-footer {
     border-top: none;
 
@@ -205,29 +213,38 @@ header {
 }
 
 //____________carousel____________
-.carousel-item {
-  .sub-info-text {
-    position: relative;
-    color: white;
-    flex-direction: column;
+.sub-info-text {
+  position: relative;
+  color: white;
+  flex-direction: column;
 
-    h1 {
-      font-family: 'light', $font-primary;
-      width: 70%;
-      text-align: center;
-      word-wrap: break-word;
-    }
+  p {
+    font-size: 1.75em;
+    font-weight: 300;
+  }
 
-    a {
-      width: calc(8rem + 2vw);
-      text-align: center;
+  .down-arrow {
+    position: absolute;
+    bottom: 5%;
+  }
 
-      &:focus {
-        box-shadow: none;
-      }
+  h1 {
+    font-family: 'light', $font-primary;
+    width: 70%;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  a {
+    width: calc(8rem + 2vw);
+    text-align: center;
+
+    &:focus {
+      box-shadow: none;
     }
   }
 }
+
 
 .bg {
   width: 100%;
@@ -314,10 +331,65 @@ header {
   }
 }
 
-.sub-info-text {
-  position: relative;
-  color: white;
-  flex-direction: column;
+.stage {
+
+  .list-counter-circle {
+    font-size: 1.1em;
+    font-weight: 300;
+    text-align: justify;
+    list-style: none;
+    counter-reset: list;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    li {
+      position: relative;
+      display: block;
+      line-height: 2rem;
+      margin-left: 1.75rem;
+      margin-bottom: .25rem;
+      padding-left: 1rem;
+      padding-right: .5rem;
+      color: #fff;
+      background: #212529;
+      border-radius: .25rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        content: counter(list);
+        counter-increment: list;
+        position: absolute;
+        left: -2rem;
+        top: -.25rem;
+        bottom: -.25rem;
+        width: 2.5rem;
+        line-height: 2rem;
+        border-radius: 1.25rem;
+        border: .25rem solid #110f16;
+        text-align: center;
+        color: #fff;
+        background: #212529;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  .plan-text {
+
+  }
+
+  .stage-num {
+    font-size: 2em;
+    font-weight: 300;
+  }
+
 }
 
 //____________media breakpoint____________
