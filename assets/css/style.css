@@ -8541,14 +8541,14 @@ header {
   background-image: url("../img/bg6.jpg");
   background-position: center; }
 
-.card .wrapper {
+.card-works .wrapper {
   overflow: hidden;
   height: 200px;
   position: relative;
   z-index: 0; }
-  .card .wrapper img {
+  .card-works .wrapper img {
     transition: all 0.3s; }
-.card:hover img {
+.card-works:hover img {
   transform: scale(1.1); }
 
 .work-together {

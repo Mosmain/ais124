@@ -290,7 +290,7 @@ header {
 }
 
 //____________cards____________
-.card {
+.card-works {
   .wrapper {
     overflow: hidden;
     height: 200px;
@@ -391,6 +391,24 @@ header {
   }
 
 }
+
+//.card-port {
+//  .wrapper {
+//    overflow: hidden;
+//    height: 200px;
+//    position: relative;
+//    z-index: 0;
+//
+//    img {
+//      transition: all 0.3s;
+//    }
+//
+//  }
+//
+//  &:hover img {
+//    transform: scale(1.1);
+//  }
+//}
 
 //____________media breakpoint____________
 @include media-breakpoint-down(sm) {
