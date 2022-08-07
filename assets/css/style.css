@@ -8606,6 +8606,16 @@ header {
   font-size: 2em;
   font-weight: 300; }
 
+.footer .contacts a {
+  display: flex;
+  height: 24px;
+  align-items: center;
+  margin-bottom: 0.5rem; }
+  .footer .contacts a i {
+    padding-right: 0.5rem; }
+.footer .contacts a:last-child {
+  margin-bottom: 0; }
+
 @media (max-width: 575.98px) {
   .carousel-item .sub-info-text h1, .carousel-item .sub-info-text .h1, .welcome p, .work-together p {
     font-size: 1.25em; } }

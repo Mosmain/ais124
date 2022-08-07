@@ -410,6 +410,25 @@ header {
 //  }
 //}
 
+.footer {
+  .contacts {
+    a {
+      display: flex;
+      height: 24px;
+      align-items: center;
+      margin-bottom: 0.5rem;
+
+      i {
+        padding-right: 0.5rem;
+      }
+    }
+
+    a:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 //____________media breakpoint____________
 @include media-breakpoint-down(sm) {
   .carousel-item .sub-info-text h1, .welcome p, .work-together p {
