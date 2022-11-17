@@ -1,456 +1,612 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <title>AiS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--need to replace-->
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-          rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--need to replace-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-    <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-<body>
-
-<header>
-    <nav class="navbar navbar-settings">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-settings">
         <div class="container-fluid">
-            <a class="navbar-brand">AIS</a>
-            <button type="button" class="btn btn-custom d-flex align-items-center" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                <h5 class="m-0 pe-2">MENU</h5>
-                <div>
-                    <svg class="svg-icon" viewBox="0 0 20 20">
-                        <path fill="none" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+          <a class="navbar-brand">AIS</a>
+          <button
+            type="button"
+            class="btn btn-custom d-flex align-items-center"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <h5 class="m-0 pe-2">MENU</h5>
+            <div>
+              <svg class="svg-icon" viewBox="0 0 20 20">
+                <path
+                  fill="none"
+                  d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
 								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
 								s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
-								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
-                    </svg>
-                </div>
-            </button>
+								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"
+                ></path>
+              </svg>
+            </div>
+          </button>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<!--slider-->
-<section class="container-fluid px-0" data-parallax="scroll">
-    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel"
-         data-bs-interval="3000">
+    <!--slider-->
+    <section class="container-fluid px-0" data-parallax="scroll">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
         <div class="carousel-inner bg-info" role="listbox">
-            <!--slide 0-->
-            <div class="carousel-item active">
-                <div class="bg bg-slide-0"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ПРОЕКТИРОВАНИЕ</h1>
-                    <a href="#proect" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
+          <!--slide 0-->
+          <div class="carousel-item active">
+            <div class="bg bg-slide-0"></div>
+            <div
+              class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text"
+            >
+              <h1 class="display-6 mb-3">ПРОЕКТИРОВАНИЕ</h1>
+              <a href="#proect" type="button" class="btn btn-outline-light"
+                >ПОДРОБНЕЕ</a
+              >
             </div>
-            <!--slide 1-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-1"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ДИЗАЙН</h1>
-                    <a href="#design" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
+          </div>
+          <!--slide 1-->
+          <div class="carousel-item">
+            <div class="bg bg-slide-1"></div>
+            <div
+              class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text"
+            >
+              <h1 class="display-6 mb-3">ДИЗАЙН</h1>
+              <a href="#design" type="button" class="btn btn-outline-light"
+                >ПОДРОБНЕЕ</a
+              >
             </div>
-            <!--slide 2-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-2"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ПЛАНИРОВАНИЕ ТЕРРИТОРИЙ</h1>
-                    <a href="#plan-ter" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
+          </div>
+          <!--slide 2-->
+          <div class="carousel-item">
+            <div class="bg bg-slide-2"></div>
+            <div
+              class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text"
+            >
+              <h1 class="display-6 mb-3">ПЛАНИРОВАНИЕ ТЕРРИТОРИЙ</h1>
+              <a href="#plan-ter" type="button" class="btn btn-outline-light"
+                >ПОДРОБНЕЕ</a
+              >
             </div>
-            <!--slide 3-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-3"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ОХРАННО-ПОЖАРНАЯ СИГНАЛИЗАЦИЯ</h1>
-                    <a href="#signal" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
+          </div>
+          <!--slide 3-->
+          <div class="carousel-item">
+            <div class="bg bg-slide-3"></div>
+            <div
+              class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text"
+            >
+              <h1 class="display-6 mb-3">ОХРАННО-ПОЖАРНАЯ СИГНАЛИЗАЦИЯ</h1>
+              <a href="#signal" type="button" class="btn btn-outline-light"
+                >ПОДРОБНЕЕ</a
+              >
             </div>
-            <!--slide 4-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-4"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ВИДЕОНАБЛЮДЕНИЕ</h1>
-                    <a href="#video" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
+          </div>
+          <!--slide 4-->
+          <div class="carousel-item">
+            <div class="bg bg-slide-4"></div>
+            <div
+              class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text"
+            >
+              <h1 class="display-6 mb-3">ВИДЕОНАБЛЮДЕНИЕ</h1>
+              <a href="#video" type="button" class="btn btn-outline-light"
+                >ПОДРОБНЕЕ</a
+              >
             </div>
-            <!--slide 5-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-5"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ЭЛЕКТРОМОНТАЖ</h1>
-                    <a href="#electro" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
+          </div>
+          <!--slide 5-->
+          <div class="carousel-item">
+            <div class="bg bg-slide-5"></div>
+            <div
+              class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text"
+            >
+              <h1 class="display-6 mb-3">ЭЛЕКТРОМОНТАЖ</h1>
+              <a href="#electro" type="button" class="btn btn-outline-light"
+                >ПОДРОБНЕЕ</a
+              >
             </div>
-            <!--slide 6-->
-            <div class="carousel-item">
-                <div class="bg bg-slide-6"></div>
-                <div class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text">
-                    <h1 class="display-6 mb-3">ОТДЕЛОЧНЫЕ РАБОТЫ</h1>
-                    <a href="#finishing" type="button" class="btn btn-outline-light">ПОДРОБНЕЕ</a>
-                </div>
+          </div>
+          <!--slide 6-->
+          <div class="carousel-item">
+            <div class="bg bg-slide-6"></div>
+            <div
+              class="d-flex align-items-center justify-content-center min-vh-100 sub-info-text"
+            >
+              <h1 class="display-6 mb-3">ОТДЕЛОЧНЫЕ РАБОТЫ</h1>
+              <a href="#finishing" type="button" class="btn btn-outline-light"
+                >ПОДРОБНЕЕ</a
+              >
             </div>
+          </div>
         </div>
         <!--arrows-->
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-bs-hidden="true"></span>
-            <span class="sr-only">Next</span>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-bs-hidden="true"></span>
+          <span class="sr-only">Next</span>
         </a>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="welcome">
-    <h3 class="text-center text-white">ДОБРО ПОЖАЛОВАТЬ</h3>
-</section>
+    <section class="welcome">
+      <h3 class="text-center text-white">ДОБРО ПОЖАЛОВАТЬ</h3>
+    </section>
 
-<section class="container">
-    <h3 class="text-center text-white">Виды работ</h3>
+    <section class="container">
+      <h3 class="text-center text-white">Виды работ</h3>
 
-    <div class="row justify-content-center">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-4 justify-content-center">
-            <div class="col">
-                <div class="card bg-dark text-white h-100">
-                    <div class="wrapper">
-                        <img src="assets/img/card0.jpg" class="card-img-top" alt="kiska">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Проектирование</h5>
-                        <p class="card-text">Возьмем на себя ответственность и выполним все необходимые условия для
-                            начала строительства в соответствии с нормативно-правовыми актами.</p>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center">
-                        <a href="#" type="button" class="btn btn-outline-light btn-lg btn-block">Подробнее</a>
-                    </div>
-                </div>
+      <div class="row justify-content-center">
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-4 justify-content-center"
+        >
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <div class="wrapper">
+                <img
+                  src="assets/img/card0.jpg"
+                  class="card-img-top"
+                  alt="kiska"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Проектирование</h5>
+                <p class="card-text">
+                  Возьмем на себя ответственность и выполним все необходимые
+                  условия для начала строительства в соответствии с
+                  нормативно-правовыми актами.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btn-outline-light btn-lg btn-block"
+                  >Подробнее</a
+                >
+              </div>
             </div>
-            <div class="col">
-                <div class="card bg-dark text-white h-100">
-                    <div class="wrapper">
-                        <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Дизайн</h5>
-                        <p class="card-text">Ремонт осуществляют только высококвалифицированные специалисты, вы можете
-                            не беспокоиться о технической составляющей
-                            проекта.
-                        </p>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center">
-                        <a href="#" type="button" class="btn btn-outline-light btn-lg btn-block">Подробнее</a>
-                    </div>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <div class="wrapper">
+                <img
+                  src="assets/img/card1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Дизайн</h5>
+                <p class="card-text">
+                  Ремонт осуществляют только высококвалифицированные
+                  специалисты, вы можете не беспокоиться о технической
+                  составляющей проекта.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btn-outline-light btn-lg btn-block"
+                  >Подробнее</a
+                >
+              </div>
             </div>
-            <div class="col">
-                <div class="card bg-dark text-white h-100">
-                    <div class="wrapper">
-                        <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Планирование территорий</h5>
-                        <p class="card-text">Разработка генеральных планов под застройку территорий, планирование
-                            поселков, баз отдыха, промышленных территорий.</p>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center">
-                        <a href="#" type="button" class="btn btn-outline-light btn-lg btn-block">Подробнее</a>
-                    </div>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <div class="wrapper">
+                <img
+                  src="assets/img/card2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Планирование территорий</h5>
+                <p class="card-text">
+                  Разработка генеральных планов под застройку территорий,
+                  планирование поселков, баз отдыха, промышленных территорий.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btn-outline-light btn-lg btn-block"
+                  >Подробнее</a
+                >
+              </div>
             </div>
-            <div class="col">
-                <div class="card bg-dark text-white h-100">
-                    <div class="wrapper">
-                        <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Охранно-пожарная сигнализация</h5>
-                        <p class="card-text">Наша компания предлагает оборудование ОПС с типовыми характеристиками для
-                            установки на коммерческих, производственных, общественных объектах.</p>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center">
-                        <a href="#" type="button" class="btn btn-outline-light btn-lg btn-block">Подробнее</a>
-                    </div>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <div class="wrapper">
+                <img
+                  src="assets/img/card3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Охранно-пожарная сигнализация</h5>
+                <p class="card-text">
+                  Наша компания предлагает оборудование ОПС с типовыми
+                  характеристиками для установки на коммерческих,
+                  производственных, общественных объектах.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btn-outline-light btn-lg btn-block"
+                  >Подробнее</a
+                >
+              </div>
             </div>
-            <div class="col">
-                <div class="card bg-dark text-white h-100">
-                    <div class="wrapper">
-                        <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Видеонаблюдение</h5>
-                        <p class="card-text">Установка систем видеонаблюдения под ключ правильный выбор при решении
-                            различных задач обеспечения безопасности и контроля офиса, магазина, склада или
-                            ресторана.</p>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center">
-                        <a href="#" type="button" class="btn btn-outline-light btn-lg btn-block">Подробнее</a>
-                    </div>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <div class="wrapper">
+                <img
+                  src="assets/img/card4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Видеонаблюдение</h5>
+                <p class="card-text">
+                  Установка систем видеонаблюдения под ключ правильный выбор при
+                  решении различных задач обеспечения безопасности и контроля
+                  офиса, магазина, склада или ресторана.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btn-outline-light btn-lg btn-block"
+                  >Подробнее</a
+                >
+              </div>
             </div>
-            <div class="col">
-                <div class="card bg-dark text-white h-100">
-                    <div class="wrapper">
-                        <img src="assets/img/card5.jpg" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Электромонтаж</h5>
-                        <p class="card-text">ООО «АиС» осуществляет полный комплекс электромонтажных работ в Москве и
-                            Московской области . В спектр услуг входят проектные работы и электромонтаж для квартир и
-                            жилых домов, а также офисов и промышленных помещений.</p>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center">
-                        <a href="#" type="button" class="btn btn-outline-light btn-lg btn-block">Подробнее</a>
-                    </div>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <div class="wrapper">
+                <img
+                  src="assets/img/card5.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Электромонтаж</h5>
+                <p class="card-text">
+                  ООО «АиС» осуществляет полный комплекс электромонтажных работ
+                  в Москве и Московской области . В спектр услуг входят
+                  проектные работы и электромонтаж для квартир и жилых домов, а
+                  также офисов и промышленных помещений.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btn-outline-light btn-lg btn-block"
+                  >Подробнее</a
+                >
+              </div>
             </div>
-            <div class="col">
-                <div class="card bg-dark text-white h-100">
-                    <div class="wrapper">
-                        <img src="assets/img/card6.jpg" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Отделочные работы</h5>
-                        <p class="card-text">Отделочные работы – это заключительный этап строительства или ремонта
-                            зданий.</p>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center">
-                        <a href="#" type="button" class="btn btn-outline-light btn-lg btn-block">Подробнее</a>
-                    </div>
-                </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white h-100">
+              <div class="wrapper">
+                <img
+                  src="assets/img/card6.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Отделочные работы</h5>
+                <p class="card-text">
+                  Отделочные работы – это заключительный этап строительства или
+                  ремонта зданий.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btn-outline-light btn-lg btn-block"
+                  >Подробнее</a
+                >
+              </div>
             </div>
+          </div>
         </div>
         <div class="text-wa text-center mt-5 mb-5">
-            <a href="https://wa.me/88005553535" target="_blank" type="button" class="btn btn-outline-light btn-lg">
-                Большая кнопка
-            </a>
+          <a
+            href="https://wa.me/88005553535"
+            target="_blank"
+            type="button"
+            class="btn btn-outline-light btn-lg"
+          >
+            Большая кнопка
+          </a>
         </div>
-    </div>
+      </div>
 
-    <!--    <article class="postcard dark blue" id="proect">-->
-    <!--        <a class="postcard__img_link" href="#">-->
-    <!--            <img class="postcard__img" src="assets/img/card0.jpg" alt="проектирование"/>-->
-    <!--        </a>-->
-    <!--        <div class="postcard__text">-->
-    <!--            <h1 class="postcard__title blue"><a href="#">Проектирование</a></h1>-->
-    <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
-    <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
-    <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
-    <!--            <div class="postcard__bar"></div>-->
-    <!--            <div class="postcard__preview-txt">Проектирование зданий и сооружений — трудоемкий и многоэтапный процесс,-->
-    <!--                требующий немалых усилий и квалификации сотрудников проектной организации. Доверив написание проектной и-->
-    <!--                рабочей документации нашим специалистам, вы получите грамотные конструктивные решения и архитектурные-->
-    <!--                идеи, которые станут надежной опорой в возведении и эксплуатации объекта.-->
-    <!--            </div>-->
-    <!--            <ul class="postcard__tagbox">-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item play blue">&ndash;&gt;-->
-    <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
-    <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </article>-->
-    <!--    <article class="postcard dark blue">-->
-    <!--        <a class="postcard__img_link" href="#">-->
-    <!--            <img class="postcard__img" src="assets/img/card1.jpg" alt="дизайн"/>-->
-    <!--        </a>-->
-    <!--        <div class="postcard__text">-->
-    <!--            <h1 class="postcard__title red"><a href="#">Дизайн</a></h1>-->
-    <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
-    <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
-    <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
-    <!--            <div class="postcard__bar"></div>-->
-    <!--            <div class="postcard__preview-txt">Сейчас в нашей компании работают лучшие дизайнеры и проектировщики,-->
-    <!--                создающие проекты под образ жизни клиентов студии. Ремонт осуществляют только высококвалифицированные-->
-    <!--                специалисты, вы можете не беспокоиться о технической составляющей проекта.-->
+      <!--    <article class="postcard dark blue" id="proect">-->
+      <!--        <a class="postcard__img_link" href="#">-->
+      <!--            <img class="postcard__img" src="assets/img/card0.jpg" alt="проектирование"/>-->
+      <!--        </a>-->
+      <!--        <div class="postcard__text">-->
+      <!--            <h1 class="postcard__title blue"><a href="#">Проектирование</a></h1>-->
+      <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
+      <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
+      <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
+      <!--            <div class="postcard__bar"></div>-->
+      <!--            <div class="postcard__preview-txt">Проектирование зданий и сооружений — трудоемкий и многоэтапный процесс,-->
+      <!--                требующий немалых усилий и квалификации сотрудников проектной организации. Доверив написание проектной и-->
+      <!--                рабочей документации нашим специалистам, вы получите грамотные конструктивные решения и архитектурные-->
+      <!--                идеи, которые станут надежной опорой в возведении и эксплуатации объекта.-->
+      <!--            </div>-->
+      <!--            <ul class="postcard__tagbox">-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item play blue">&ndash;&gt;-->
+      <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+      <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
+      <!--            </ul>-->
+      <!--        </div>-->
+      <!--    </article>-->
+      <!--    <article class="postcard dark blue">-->
+      <!--        <a class="postcard__img_link" href="#">-->
+      <!--            <img class="postcard__img" src="assets/img/card1.jpg" alt="дизайн"/>-->
+      <!--        </a>-->
+      <!--        <div class="postcard__text">-->
+      <!--            <h1 class="postcard__title red"><a href="#">Дизайн</a></h1>-->
+      <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
+      <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
+      <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
+      <!--            <div class="postcard__bar"></div>-->
+      <!--            <div class="postcard__preview-txt">Сейчас в нашей компании работают лучшие дизайнеры и проектировщики,-->
+      <!--                создающие проекты под образ жизни клиентов студии. Ремонт осуществляют только высококвалифицированные-->
+      <!--                специалисты, вы можете не беспокоиться о технической составляющей проекта.-->
 
-    <!--            </div>-->
-    <!--            <ul class="postcard__tagbox">-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item play red">&ndash;&gt;-->
-    <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
-    <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </article>-->
-    <!--    <article class="postcard dark blue" id="plan-ter">-->
-    <!--        <a class="postcard__img_link" href="#">-->
-    <!--            <img class="postcard__img" src="assets/img/card0.jpg" alt="проектирование"/>-->
-    <!--        </a>-->
-    <!--        <div class="postcard__text">-->
-    <!--            <h1 class="postcard__title blue"><a href="#">Планирование территорий</a></h1>-->
-    <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
-    <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
-    <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
-    <!--            <div class="postcard__bar"></div>-->
-    <!--            <div class="postcard__preview-txt">Проектирование зданий и сооружений — трудоемкий и многоэтапный процесс,-->
-    <!--                требующий немалых усилий и квалификации сотрудников проектной организации. Доверив написание проектной и-->
-    <!--                рабочей документации нашим специалистам, вы получите грамотные конструктивные решения и архитектурные-->
-    <!--                идеи, которые станут надежной опорой в возведении и эксплуатации объекта.-->
-    <!--            </div>-->
-    <!--            <ul class="postcard__tagbox">-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item play blue">&ndash;&gt;-->
-    <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
-    <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </article>-->
-    <!--    <article class="postcard dark blue">-->
-    <!--        <a class="postcard__img_link" href="#">-->
-    <!--            <img class="postcard__img" src="assets/img/card1.jpg" alt="дизайн"/>-->
-    <!--        </a>-->
-    <!--        <div class="postcard__text">-->
-    <!--            <h1 class="postcard__title red"><a href="#">Охранно-пожарная сигнализация</a></h1>-->
-    <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
-    <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
-    <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
-    <!--            <div class="postcard__bar"></div>-->
-    <!--            <div class="postcard__preview-txt">Наша компания предлагает оборудование ОПС с типовыми характеристиками для-->
-    <!--                установки на коммерческих, производственных, общественных объектах. У нас есть отдельные комплектующие и-->
-    <!--                полноценные комплексы, оптимизированные под конкретные задачи.-->
-    <!--            </div>-->
-    <!--            <ul class="postcard__tagbox">-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item play red">&ndash;&gt;-->
-    <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
-    <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </article>-->
-    <!--    <article class="postcard dark blue" id="proect">-->
-    <!--        <a class="postcard__img_link" href="#">-->
-    <!--            <img class="postcard__img" src="assets/img/card0.jpg" alt="проектирование"/>-->
-    <!--        </a>-->
-    <!--        <div class="postcard__text">-->
-    <!--            <h1 class="postcard__title blue"><a href="#">Проектирование</a></h1>-->
-    <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
-    <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
-    <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
-    <!--            <div class="postcard__bar"></div>-->
-    <!--            <div class="postcard__preview-txt">Проектирование зданий и сооружений — трудоемкий и многоэтапный процесс,-->
-    <!--                требующий немалых усилий и квалификации сотрудников проектной организации. Доверив написание проектной и-->
-    <!--                рабочей документации нашим специалистам, вы получите грамотные конструктивные решения и архитектурные-->
-    <!--                идеи, которые станут надежной опорой в возведении и эксплуатации объекта.-->
-    <!--            </div>-->
-    <!--            <ul class="postcard__tagbox">-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item play blue">&ndash;&gt;-->
-    <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
-    <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </article>-->
-    <!--    <article class="postcard dark blue">-->
-    <!--        <a class="postcard__img_link" href="#">-->
-    <!--            <img class="postcard__img" src="assets/img/card1.jpg" alt="дизайн"/>-->
-    <!--        </a>-->
-    <!--        <div class="postcard__text">-->
-    <!--            <h1 class="postcard__title red"><a href="#">Дизайн</a></h1>-->
-    <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
-    <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
-    <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
-    <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
-    <!--            <div class="postcard__bar"></div>-->
-    <!--            <div class="postcard__preview-txt">Сейчас в нашей компании работают лучшие дизайнеры и проектировщики,-->
-    <!--                создающие проекты под образ жизни клиентов студии. Ремонт осуществляют только высококвалифицированные-->
-    <!--                специалисты, вы можете не беспокоиться о технической составляющей проекта.-->
+      <!--            </div>-->
+      <!--            <ul class="postcard__tagbox">-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item play red">&ndash;&gt;-->
+      <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+      <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
+      <!--            </ul>-->
+      <!--        </div>-->
+      <!--    </article>-->
+      <!--    <article class="postcard dark blue" id="plan-ter">-->
+      <!--        <a class="postcard__img_link" href="#">-->
+      <!--            <img class="postcard__img" src="assets/img/card0.jpg" alt="проектирование"/>-->
+      <!--        </a>-->
+      <!--        <div class="postcard__text">-->
+      <!--            <h1 class="postcard__title blue"><a href="#">Планирование территорий</a></h1>-->
+      <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
+      <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
+      <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
+      <!--            <div class="postcard__bar"></div>-->
+      <!--            <div class="postcard__preview-txt">Проектирование зданий и сооружений — трудоемкий и многоэтапный процесс,-->
+      <!--                требующий немалых усилий и квалификации сотрудников проектной организации. Доверив написание проектной и-->
+      <!--                рабочей документации нашим специалистам, вы получите грамотные конструктивные решения и архитектурные-->
+      <!--                идеи, которые станут надежной опорой в возведении и эксплуатации объекта.-->
+      <!--            </div>-->
+      <!--            <ul class="postcard__tagbox">-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item play blue">&ndash;&gt;-->
+      <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+      <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
+      <!--            </ul>-->
+      <!--        </div>-->
+      <!--    </article>-->
+      <!--    <article class="postcard dark blue">-->
+      <!--        <a class="postcard__img_link" href="#">-->
+      <!--            <img class="postcard__img" src="assets/img/card1.jpg" alt="дизайн"/>-->
+      <!--        </a>-->
+      <!--        <div class="postcard__text">-->
+      <!--            <h1 class="postcard__title red"><a href="#">Охранно-пожарная сигнализация</a></h1>-->
+      <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
+      <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
+      <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
+      <!--            <div class="postcard__bar"></div>-->
+      <!--            <div class="postcard__preview-txt">Наша компания предлагает оборудование ОПС с типовыми характеристиками для-->
+      <!--                установки на коммерческих, производственных, общественных объектах. У нас есть отдельные комплектующие и-->
+      <!--                полноценные комплексы, оптимизированные под конкретные задачи.-->
+      <!--            </div>-->
+      <!--            <ul class="postcard__tagbox">-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item play red">&ndash;&gt;-->
+      <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+      <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
+      <!--            </ul>-->
+      <!--        </div>-->
+      <!--    </article>-->
+      <!--    <article class="postcard dark blue" id="proect">-->
+      <!--        <a class="postcard__img_link" href="#">-->
+      <!--            <img class="postcard__img" src="assets/img/card0.jpg" alt="проектирование"/>-->
+      <!--        </a>-->
+      <!--        <div class="postcard__text">-->
+      <!--            <h1 class="postcard__title blue"><a href="#">Проектирование</a></h1>-->
+      <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
+      <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
+      <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
+      <!--            <div class="postcard__bar"></div>-->
+      <!--            <div class="postcard__preview-txt">Проектирование зданий и сооружений — трудоемкий и многоэтапный процесс,-->
+      <!--                требующий немалых усилий и квалификации сотрудников проектной организации. Доверив написание проектной и-->
+      <!--                рабочей документации нашим специалистам, вы получите грамотные конструктивные решения и архитектурные-->
+      <!--                идеи, которые станут надежной опорой в возведении и эксплуатации объекта.-->
+      <!--            </div>-->
+      <!--            <ul class="postcard__tagbox">-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item play blue">&ndash;&gt;-->
+      <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+      <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
+      <!--            </ul>-->
+      <!--        </div>-->
+      <!--    </article>-->
+      <!--    <article class="postcard dark blue">-->
+      <!--        <a class="postcard__img_link" href="#">-->
+      <!--            <img class="postcard__img" src="assets/img/card1.jpg" alt="дизайн"/>-->
+      <!--        </a>-->
+      <!--        <div class="postcard__text">-->
+      <!--            <h1 class="postcard__title red"><a href="#">Дизайн</a></h1>-->
+      <!--            &lt;!&ndash;            <div class="postcard__subtitle small">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                <time datetime="2020-05-25 12:00:00">&ndash;&gt;-->
+      <!--            &lt;!&ndash;                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020&ndash;&gt;-->
+      <!--            &lt;!&ndash;                </time>&ndash;&gt;-->
+      <!--            &lt;!&ndash;            </div>&ndash;&gt;-->
+      <!--            <div class="postcard__bar"></div>-->
+      <!--            <div class="postcard__preview-txt">Сейчас в нашей компании работают лучшие дизайнеры и проектировщики,-->
+      <!--                создающие проекты под образ жизни клиентов студии. Ремонт осуществляют только высококвалифицированные-->
+      <!--                специалисты, вы можете не беспокоиться о технической составляющей проекта.-->
 
-    <!--            </div>-->
-    <!--            <ul class="postcard__tagbox">-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                <li class="tag__item play red">&ndash;&gt;-->
-    <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
-    <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
-    <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </article>-->
-</section>
+      <!--            </div>-->
+      <!--            <ul class="postcard__tagbox">-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                <li class="tag__item play red">&ndash;&gt;-->
+      <!--                &lt;!&ndash;                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>&ndash;&gt;-->
+      <!--                &lt;!&ndash;                </li>&ndash;&gt;-->
+      <!--                <a href="#" type="button" class="btn btn-primary btn-lg btn-block">Подробнее</a>-->
+      <!--            </ul>-->
+      <!--        </div>-->
+      <!--    </article>-->
+    </section>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <div class="d-flex align-items-center close-modal" data-bs-dismiss="modal">
-                    <h5 class="modal-title font-light">ЗАКРЫТЬ</h5>
-                </div>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <div
+              class="d-flex align-items-center close-modal"
+              data-bs-dismiss="modal"
+            >
+              <h5 class="modal-title font-light">ЗАКРЫТЬ</h5>
             </div>
-            <div class="modal-body">
-                <div class="list-group list-group-flush">
-                    <!--need to edit-->
-                    <a href="#" class="list-group-item list-group-item-action"><p><b>Главная</b></p></a>
-                    <a href="#" class="list-group-item list-group-item-action"><p><b>Виды работ</b></p></a>
-                    <a href="#" class="list-group-item list-group-item-action"><p><b>Портфолио</b></p></a>
-                    <a href="#" class="list-group-item list-group-item-action"><p><b>Контакты</b></p></a>
-                </div>
+          </div>
+          <div class="modal-body">
+            <div class="list-group list-group-flush">
+              <!--need to edit-->
+              <a href="#" class="list-group-item list-group-item-action"
+                ><p><b>Главная</b></p></a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                ><p><b>Виды работ</b></p></a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                ><p><b>Портфолио</b></p></a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                ><p><b>Контакты</b></p></a
+              >
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<footer class="footer mt-auto py-3 bg-dark">
-    <div class="container">
+    <footer class="footer mt-auto py-3 bg-dark">
+      <div class="container">
         <span class="text-muted">Place sticky footer content here.</span>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<!--<script src="assets/js/main.js"></script>-->
-<!--<script src="assets/js/script.js"></script>-->
-<script>
-    const $window = $(window);
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="assets/js/main.js"></script>-->
+    <!--<script src="assets/js/script.js"></script>-->
+    <script>
+      const $window = $(window);
 
-    $window.on('scroll', onScroll);
+      $window.on("scroll", onScroll);
 
-    function onScroll() {
+      function onScroll() {
         if ($window.scrollTop() >= $window.height()) {
-            document.querySelector('.navbar').style.background = 'rgba(17, 15, 22, 0.9)';
+          document.querySelector(".navbar").style.background =
+            "rgba(17, 15, 22, 0.9)";
         } else {
-            document.querySelector('.navbar').style.background = 'none';
+          document.querySelector(".navbar").style.background = "none";
         }
-    }
+      }
 
-    if (window.pageYOffset >= $window.height()) {
-        document.querySelector('.navbar').style.background = 'rgba(17, 15, 22, 0.9)';
-    }
-</script>
-</body>
+      if (window.pageYOffset >= $window.height()) {
+        document.querySelector(".navbar").style.background =
+          "rgba(17, 15, 22, 0.9)";
+      }
+    </script>
+  </body>
 </html>
-
